@@ -2,16 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='dist/styles.css') }}"
+    />
     <title>Conversion Result</title>
   </head>
-  <body>
-    <h1>Conversion Completed</h1>
-    <p>
-      Download your combined CSV file:
-      <a href="{{ url_for('output_file', filename=filename) }}"
-        >{{ filename }}</a
-      >
-    </p>
-    <a href="{{ url_for('upload_file') }}">Upload More Files</a>
+  <body class="bg-gray-100 p-6">
+    <div
+      class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+    >
+      <div class="p-6">
+        <h1 class="text-2xl font-bold mb-4">Conversion Completed</h1>
+        <p class="text-gray-700">
+          Download your combined CSV file:
+          <a
+            href="{{ url_for('output_file', filename=filename) }}"
+            class="text-blue-500 hover:underline"
+            >{{ filename }}</a
+          >
+        </p>
+        <a
+          href="{{ url_for('upload_file') }}"
+          class="inline-block mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >Upload More Files</a
+        >
+      </div>
+    </div>
   </body>
 </html>
