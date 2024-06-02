@@ -1,4 +1,4 @@
-# 🚀 Excel to CSV Converter API 📊
+# 🚀 Excel to CSV Converter 📊
 
 - Made with Flask 🚀
 
