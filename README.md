@@ -28,6 +28,24 @@ Run the application:
 python app.py
 ```
 
+## Using Docker
+
+If you prefer using Docker, you can build and run the application with the provided Dockerfile. First, ensure you have Docker installed on your system.
+
+Build the Docker image:
+
+```bash
+docker build -t excel-to-csv-converter .
+```
+
+Run the Docker container:
+
+```bash
+docker run -p 5000:5000 excel-to-csv-converter
+```
+
+The application will be available at http://localhost:5000/.
+
 ## Usage
 
 1. **Upload Files**: Navigate to the application's homepage (http://localhost:5000/). Use the form to upload.xlsx files and specify the desired output CSV file name.
