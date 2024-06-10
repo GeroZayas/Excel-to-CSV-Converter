@@ -2,17 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='dist/styles.css') }}"
+    />
     <title>Upload XLSX Files</title>
   </head>
-  <body>
-    <h1>Upload XLSX Files</h1>
-    <form method="post" enctype="multipart/form-data">
-      <input type="file" name="files[]" multiple required />
-      <br />
-      <label for="output_filename">Enter name for output CSV file:</label>
-      <input type="text" name="output_filename" required />
-      <br />
-      <input type="submit" value="Upload and Convert" />
-    </form>
+  <body class="bg-gray-100 p-6">
+    <div
+      class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+    >
+      <div class="p-6">
+        <h1 class="text-2xl font-bold mb-4">Upload XLSX Files</h1>
+        <form method="post" enctype="multipart/form-data" class="space-y-4">
+          <div>
+            <input
+              type="file"
+              name="files[]"
+              multiple
+              required
+              class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label
+              for="output_filename"
+              class="block text-sm font-medium text-gray-700"
+              >Enter name for output CSV file:</label
+            >
+            <input
+              type="text"
+              name="output_filename"
+              required
+              class="mt-1 block w-full shadow-sm sm:text-sm border border-gray-300 rounded-md"
+            />
+          </div>
+          <div>
+            <input
+              type="submit"
+              value="Upload and Convert"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

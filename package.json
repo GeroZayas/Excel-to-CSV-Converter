@@ -1,0 +1,26 @@
+{
+  "name": "xlsx-to-csv-converter-web-app",
+  "version": "1.0.0",
+  "description": "- Made with Flask 🚀",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./static/src/styles.css -o ./static/dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeroZayas/Xlsx-to-Csv-Converter-Web-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeroZayas/Xlsx-to-Csv-Converter-Web-App/issues"
+  },
+  "homepage": "https://github.com/GeroZayas/Xlsx-to-Csv-Converter-Web-App#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  }
+}
